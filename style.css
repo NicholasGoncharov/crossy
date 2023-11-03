@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url(fonts/IBMPlexMono-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    background: #F1F1F1;
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    box-sizing: border-box;
+    background: white;
+    border-bottom: 1px solid #A1A6B4;
+    padding: 24px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1161px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    max-width: 212px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header__link {
+    display: flex;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav a {
+    text-decoration: unset;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* HEADER THE END */
+
+.subtitle {
+    font-family: "IBM Plex Mono";
+    color: #121723;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+/* MAIN CONTAINER */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 1161px;
+    width: 100%;
+
+    margin: 24px auto;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.container {
+    background-color: white;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 24px 24px 24px 24px;
+}
+
+.container__description {
+    padding: 32px 24px;
+    background: white;
+}
+
+.container__text {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #121723;
+}
+
+.container__title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #121723;
+}
+
+.container__image {
+    box-sizing: border-box;
+    padding: 24px;
+    width: 370px;
+}
+/* MAIN CONTAINER THE END */
+
+
+/* FOOTER */
+footer {
+    box-sizing: border-box;
+    background: #121723;
+    padding: 24px 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1161px;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    max-width: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer__link {
+    display: flex;
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav a {
+    text-decoration: unset;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer__separator {
+    width: 100%;
+    border-top: 1px solid rgba(230, 232, 236, 0.40);
+    margin: 33px 0 18px;
+}
+
+.footer__wrapper p {
+    margin: 0 auto;
+    color: #A1A6B4;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* FOOTER THE END */
+
+ul > li {
+    list-style: none;
+}
+
+@media screen and (max-width: 1208px) {
+    .header__wrapper {
+        padding: 0 24px;
+    }
+
+    .footer__wrapper {
+        padding: 0 24px;
+    }
+
+    main {
+        max-width: 764px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 811px) {
+    main {
+        max-width: 370px;
+        width: 100%;
+    }
+
+    .subtitle {
+        max-width: 370px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    main {
+        max-width: 329px;
+        width: 100%;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        max-width: 185px;
+        width: 100%;
+    }
+
+    .container__title {
+        font-size: 24px;
+    }
+
+    .container__text {
+        font-size: 18px;
+    }
+
+    .container__image {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .header__wrapper {
+        justify-content: center;
+    }
+
+    .header__nav {
+        padding-top: 10px;
+    }
+
+    .header__nav a {
+        font-size: 16px;
+    }
+
+    .footer__wrapper {
+        justify-content: center;
+    }
+
+    .footer__nav {
+        padding-top: 10px;
+    }
+
+    .footer__nav a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    main {
+        max-width: 272px;
+        width: 100%;
+    }
+
+    .subtitle {
+        font-size: 28px;
+        max-width: 185px;
+        width: 100%;
+    }
+}
